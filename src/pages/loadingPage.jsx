@@ -14,8 +14,8 @@ export default function LoadingPage() {
         <>
             {
                 loading ?
-                    <div className="w-full h-dvh justify-center flex flex-col items-center gap-5 bg-black text-white">
-                        <div className="animate-bounce pt-5">
+                    <div className="w-full h-dvh bg-black text-white">
+                        <div className="animate-bounce w-full h-full flex items-center justify-center">
                             <img src="/Senech-white.png" alt="" className="w-52"/>
                         </div>
                     </div>

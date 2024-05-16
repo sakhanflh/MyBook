@@ -48,7 +48,7 @@ export default function BeratBadanPage() {
     };
 
     return (
-        <div className='w-full overflow-x-hidden'>
+        <div className='w-full overflow-x-hidden bg-bb-bg'>
             <Header/>
             <div className="bg-bb-bg w-full h-dvh flex flex-col items-center p-5 text-bb-text">
                 <h1 className="text-2xl font-bold mb-6">Weight Record</h1>
@@ -68,7 +68,7 @@ export default function BeratBadanPage() {
                         value={weight}
                         onChange={(e) => setWeight(e.target.value)}
                         placeholder="Enter body weight"
-                        className="p-2 border border-gray-300 rounded-md"
+                        className="p-2 border border-gray-300 rounded-md text-black"
                         required
                     />
                     <button
