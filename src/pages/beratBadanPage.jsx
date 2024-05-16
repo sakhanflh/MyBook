@@ -54,7 +54,7 @@ export default function BeratBadanPage() {
                 <h1 className="text-2xl font-bold mb-6">Weight Record</h1>
 
                 {latestWeight && (
-                    <div className="py-5 px-16 rounded-xl mb-5 bg-bb-section text-center text-white">
+                    <div className="py-3 flex flex-col gap-1 px-10 rounded-xl mb-5 bg-bb-section text-center text-white">
                         <h2 className="text-lg font-semibold">Weight</h2>
                         <p>
                             {latestWeight.weight} Kg
@@ -67,24 +67,24 @@ export default function BeratBadanPage() {
                         type="number"
                         value={weight}
                         onChange={(e) => setWeight(e.target.value)}
-                        placeholder="Masukkan berat badan"
+                        placeholder="Enter body weight"
                         className="p-2 border border-gray-300 rounded-md"
                         required
                     />
                     <button
                         type="submit"
-                        className="ml-4 p-2 bg-bb-section text-white rounded-md"
+                        className="ml-4 py-2 px-5 bg-bb-section text-white rounded-md"
                     >
-                        Tambah
+                        Add
                     </button>
                 </form>
 
                 <table className="min-w-full bg-white border-2 border-bb-text text-black">
                     <thead>
                         <tr>
-                            <th className="py-2 px-4 border ">Tanggal</th>
-                            <th className="py-2 px-4 border ">Berat Badan (Kg)</th>
-                            <th className="py-2 px-4 border ">Aksi</th>
+                            <th className="py-2 px-4 border ">Date</th>
+                            <th className="py-2 px-4 border ">Weight (Kg)</th>
+                            <th className="py-2 px-4 border ">Delete</th>
                         </tr>
                     </thead>
                     <tbody>

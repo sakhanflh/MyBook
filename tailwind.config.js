@@ -9,7 +9,7 @@ export default {
       colors: {
         'bb-bg': '#040D12',
         'bb-section': '#183D3D',
-        'bb-text': '#93B1A6',
+        'bb-text': '#E0FBE2',
         'bb-extra': '#5C8374',
         'uang-bg': '#000000',
         'uang-section': '#33425B',

@@ -8,7 +8,7 @@ export function Sidebar({ onShowSidebar }) {
             <div className={onShowSidebar ? 'w-[12rem] h-[47rem] -translate-x-5 translate-y-[407px] bg-black absolute transition-all duration-500' : 'w-[12rem] h-[47rem] -translate-x-96 translate-y-[407px] bg-black absolute transition-all duration-500'}>
                 <ul className="w-full flex flex-col p-5 gap-10 text-white">
                     <div className="w-full">
-                        <Link to='/'>
+                        <Link to='/home'>
                             <li className="flex items-center gap-1"><FaHome /> Home</li>
                         </Link>
                     </div>
@@ -26,7 +26,9 @@ export function Sidebar({ onShowSidebar }) {
                     </div>
 
                     <div>
-                        <li className="flex items-center gap-1"><FaBook /> Diary</li>
+                        <Link to='/catatan'>
+                            <li className="flex items-center gap-1"><FaBook /> Diary</li>
+                        </Link>
                     </div>
                 </ul>
             </div>

@@ -31,21 +31,21 @@ export default function HomePage() {
             <div className="overflow-x-hidden w-full">
                 <Header />
                 <div className="bg-black px-5 pt-5 flex flex-col gap-5 w-full h-dvh">
-                    <div className="w-full h-28 p-5 border flex items-center justify-center bg-uang-section text-white rounded-xl text-xl flex-col gap-3">
+                    <div className="w-full h-28 p-5 border flex items-center justify-center bg-uang-section text-uang-text rounded-xl text-xl flex-col gap-3">
                         <h1>Total Finances</h1>
                         <div className="flex gap-2">
                             <p>{formatCurrency(totalKeuangan)},-</p>
                         </div>
                     </div>
 
-                    <div className="flex flex-col p-5 bg-bb-section rounded-xl border items-center text-white gap-2">
-                        <h1 className="text-xl">Berat Badan</h1>
+                    <div className="flex flex-col p-5 bg-bb-section rounded-xl border items-center text-bb-text gap-2">
+                        <h1 className="text-xl">Weight</h1>
                         {weights.length > 0 ? (
                             weights.map((weight, index) => (
                                 <p key={index}>{weight.weight} Kg</p>
                             ))
                         ) : (
-                            <p>Belum ada data berat badan.</p>
+                            <p>There's no weight data yet tho.</p>
                         )}
                     </div>
 
