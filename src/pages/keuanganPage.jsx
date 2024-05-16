@@ -91,8 +91,10 @@ export default function KeuanganPage() {
         <>
             <div className="text-uang-text overflow-x-hidden w-full">
                 <Header />
-
-                <div className="w-full h-dvh pt-16 px-5 bg-uang-bg gap-5 flex flex-col">
+                <div className="w-full h-dvh pt-8 px-5 bg-uang-bg gap-5 flex flex-col">
+                    <div className="w-full flex justify-center text-2xl font-bold mb-5">
+                        <h1>Finance</h1>
+                    </div>
                     <div className="w-full h-28 p-5 border flex items-center justify-center bg-uang-section text-uang-text rounded-xl text-xl flex-col gap-3">
                         <h1>Total Finances</h1>
                         <div className="flex gap-2">

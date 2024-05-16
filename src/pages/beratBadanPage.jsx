@@ -48,9 +48,9 @@ export default function BeratBadanPage() {
     };
 
     return (
-        <div className='w-full overflow-x-hidden bg-bb-bg'>
+        <div className='w-full overflow-x-hidden'>
             <Header/>
-            <div className="bg-bb-bg w-full h-dvh flex flex-col items-center p-5 text-bb-text">
+            <div className=" bg-black w-full h-dvh flex flex-col items-center p-5 text-bb-text">
                 <h1 className="text-2xl font-bold mb-6">Weight Record</h1>
 
                 {latestWeight && (
