@@ -126,14 +126,15 @@ export default function KeuanganPage() {
                                         <th className="px-4 py-2 border border-gray-400">Date</th>
                                         <th className="px-4 py-2 border border-gray-400">Amount</th>
                                         <th className="px-4 py-2 border border-gray-400">Information</th>
+                                        <th className="px-2 py-2 border border-gray-400"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {transactions.map((transaction, index) => (
                                         <tr key={index}>
-                                            <td className="px-4 py-2 border border-gray-400">{transaction.date}</td>
-                                            <td className="px-4 py-2 border border-gray-400">Rp {transaction.amount.toFixed(2)}</td>
-                                            <td className="px-4 py-2 border border-gray-400">{transaction.description}</td>
+                                            <td className="px-4 py-2 border border-gray-400 text-xs">{transaction.date}</td>
+                                            <td className="px-4 py-2 border border-gray-400 text-xs">Rp {transaction.amount.toFixed(2)}</td>
+                                            <td className="px-4 py-2 border border-gray-400 text-xs">{transaction.description}</td>
                                             <td className="px-1 py-2 border border-gray-400">
                                                 <button
                                                     className="text-red-500"

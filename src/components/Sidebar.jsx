@@ -20,7 +20,9 @@ export function Sidebar({ onShowSidebar }) {
                     </div>
 
                     <div>
-                        <li className="flex items-center gap-1"><FaWeight /> Berat badan</li>
+                        <Link to='/bb'>
+                            <li className="flex items-center gap-1"><FaWeight /> Berat badan</li>
+                        </Link>
                     </div>
 
                     <div>
